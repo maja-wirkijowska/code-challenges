@@ -17,6 +17,10 @@ public class BuildOrder {
             if (!result.contains((dependencies[i][0])) && !result.contains((dependencies[i][1]))) {
                 result.add(dependencies[i][0]);
                 result.add(dependencies[i][1]);
+            } else if (result.contains((dependencies[i][0]))) {
+                result.add(dependencies[i][1]);
+            } else if (result.contains(dependencies[i][1])) {
+                result.add(0, dependencies[i][0]);
             }
         }
     }

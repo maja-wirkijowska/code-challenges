@@ -1,23 +1,20 @@
 public class Robot {
     public static void main(String[] args) {
-        int r1 = 4, c1 = 3;
         int[][] test1 = {{1, 1, 0},
                          {1, 1, 1},
                          {0, 0, 1},
                          {0, 1, 1}};
-        int r2 = 3, c2 = 4;
         int[][] test2 = {{1, 0, 1, 1},
                          {1, 1, 1, 0},
                          {0, 1, 1, 0}};
-        int r3 = 2, c3 = 2;
         int[][] test3 = {{1, 0},
                          {0, 1}};
         System.out.print("Test1: ");
-        robotPath(r1, c1, test1);
+        robotPath(4, 3, test1);
         System.out.print("\nTest2: ");
-        robotPath(r2, c2, test2);
+        robotPath(3, 4, test2);
         System.out.print("Test3: ");
-        robotPath(r3, c3, test3);
+        robotPath(2, 2, test3);
     }
 
     public static void robotPath(int rows, int columns, int[][] grid) {
